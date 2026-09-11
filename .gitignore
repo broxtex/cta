@@ -1,0 +1,47 @@
+# Dependencias
+node_modules/
+
+# Build / salida de despliegue (se regenera con `npm run build`)
+.vercel/
+.output/
+dist/
+build/
+
+# Variables de entorno (nunca deben subirse)
+.env
+.env.*
+!.env.example
+
+# Datos locales de PGlite (base de datos embebida de desarrollo)
+*.pglite/
+pgdata/
+*.db
+*.db-wal
+*.db-shm
+
+# Logs
+*.log
+npm-debug.log*
+/tmp/
+
+# Sistema operativo / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Grok workspace: estado de sesión local, no hace falta versionarlo
+.grok/preview.log
+.grok/status
+.grok/skills/
+.grok/references/
+.grok/og-pending
+
+# Artefactos locales de QA / sandbox
+screenshots/
+artifacts/
+attachments/
+.node_modules.lock
+AGENTS.md
+AGENTS.project.md
